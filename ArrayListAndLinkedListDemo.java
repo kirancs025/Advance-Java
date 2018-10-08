@@ -48,3 +48,8 @@ public class ArrayListAndLinkedListDemo {
 	}
 
 }
+/**
+Arraylist performnce PT0.156S
+LinkedList performnce PT0.135S
+
+*/
