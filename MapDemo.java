@@ -1,3 +1,4 @@
+
 package collection.demos.list;
 
 import java.util.ArrayList;
@@ -36,6 +37,7 @@ public class MapDemo {
 		System.out.println("linkedHashMap demo ******************************");
 		obj.displayStudents(linkedHashMap);
 		
+		//sorting based on names
 		Comparator<Student> nameComparator=(std1,std2)->std1.getName().compareTo(std2.getName());
 		
 		Map<Student, Integer> treeMap=new TreeMap<>(nameComparator);
@@ -57,3 +59,24 @@ public class MapDemo {
 		});
 	}
 }
+/**
+ * HashMap demo ********************************
+Student [id=1, name=Kiran, email=kiran@gmail.com, adharNo=BNC123]
+Student [id=3, name=Murgendra, email=Murgendra@gmail.com, adharNo=BCDC123]
+Student [id=4, name=Guru, email=Guru@gmail.com, adharNo=ABNC123]
+Student [id=2, name=Arun, email=Arun@gmail.com, adharNo=AAC123]
+Student [id=5, name=Narasimha, email=Narasimha@gmail.com, adharNo=QBNC123]
+linkedHashMap demo ******************************
+Student [id=1, name=Kiran, email=kiran@gmail.com, adharNo=BNC123]
+Student [id=2, name=Arun, email=Arun@gmail.com, adharNo=AAC123]
+Student [id=3, name=Murgendra, email=Murgendra@gmail.com, adharNo=BCDC123]
+Student [id=4, name=Guru, email=Guru@gmail.com, adharNo=ABNC123]
+Student [id=5, name=Narasimha, email=Narasimha@gmail.com, adharNo=QBNC123]
+TreeMap demo ******************************
+Student [id=2, name=Arun, email=Arun@gmail.com, adharNo=AAC123]
+Student [id=4, name=Guru, email=Guru@gmail.com, adharNo=ABNC123]
+Student [id=1, name=Kiran, email=kiran@gmail.com, adharNo=BNC123]
+Student [id=3, name=Murgendra, email=Murgendra@gmail.com, adharNo=BCDC123]
+Student [id=5, name=Narasimha, email=Narasimha@gmail.com, adharNo=QBNC123]
+
+*/
